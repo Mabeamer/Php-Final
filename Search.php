@@ -15,7 +15,7 @@
 		<!-- create the nav bar for all sites  -->
 		<div class="container">
 			<h1>Search</h1>
-			<form class="search" method="POST" action="#" id="search">
+			<form class="search" method="GET" action="Products.php" id="search">
 				<input type="text" name="search" required>
 				<input class="submit" type="submit" value="Submit">
 			</form>

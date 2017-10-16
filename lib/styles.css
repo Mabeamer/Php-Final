@@ -1,116 +1,147 @@
- http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/*RESET ENDING*/
-
-
-/*NAV BAR*/
-ul.nav{
-		list-style-type: none;
-    	margin: 0;
-    	padding: 0;
-    	overflow: hidden;
-    	background-color: grey;
-}
-.nav li{
-	float: right;
-}
-.nav li a{
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-}
-.footer{
-	margin-top: 810px;
-	background-color: black;
-}
-/*TITLE*/
-h1{
-	text-align: center;
-}
-`
-/*/*FORM CONTAINER*/
-.formContainer{
-  width: 500px;
-  height: 500px;
-  overflow: none;
-  border: solid black 5px;
-  margin: 0 auto;
-}
-.contact{
-  text-align: center;
-  margin: auto;
-}
-input, label, select{
-  display: block;
-  margin: auto;
-}
-
-/*PRODUCTS*/
-table, tr, td{
-  border: 5px solid black;
-}
-#product{
-  width: 200px;
-  height: 200px;
-}
-figcaption{
-  text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
+ http: //meyerweb.com/eric/tools/css/reset/
+ v2.0 | 20110126 License: none (public domain) */ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+ 	margin: 0;
+ 	padding: 0;
+ 	border: 0;
+ 	font-size: 100%;
+ 	font: inherit;
+ 	vertical-align: baseline;
+ }
+ /* HTML5 display-role reset for older browsers */
+ 
+ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+ 	display: block;
+ }
+ body {
+ 	line-height: 1;
+ }
+ ol, ul {
+ 	list-style: none;
+ }
+ blockquote, q {
+ 	quotes: none;
+ }
+ blockquote:before, blockquote:after, q:before, q:after {
+ 	content: '';
+ 	content: none;
+ }
+ table {
+ 	border-collapse: collapse;
+ 	border-spacing: 0;
+ }
+ /*RESET ENDING*/
+ /*NAV BAR*/
+ 
+ body {
+ 	background-color: black;
+ 	margin: 0px;
+ 	font-family: verdana;
+ 	font-size: 10px;
+ 	color: white;
+ }
+ ul.nav {
+ 	list-style-type: none;
+ 	margin: 0;
+ 	padding: 10px;
+ 	overflow: hidden;
+ 	background: rgba(120, 120, 120, 0.5);
+ 	border-bottom: 1px solid #aaa;
+ }
+ .nav li {
+ 	float: right;
+ }
+ .nav li a {
+ 	display: block;
+ 	color: white;
+ 	text-align: center;
+ 	padding: 14px 16px;
+ 	text-decoration: none;
+ }
+ .footer {
+ 	position: fixed;
+ 	bottom: 0;
+ 	width: 100%;
+ 	background-color: black;
+ }
+ /*TITLE*/
+ 
+ h1 {
+ 	text-align: center;
+ }
+ /*INDEX*/
+ 
+ .container {
+ 	height: 400px;
+ }
+ .homepagecontainer {
+ 	margin-top: 10%;
+ }
+ /*/*FORM CONTAINER*/
+ 
+ .formContainer {
+ 	width: 500px;
+ 	height: 500px;
+ 	overflow: hidden;
+ 	border: solid black 5px;
+ 	margin: 0 auto;
+ }
+ .contact {
+ 	text-align: center;
+ 	margin: auto;
+ }
+ input, label, select {
+ 	display: block;
+ 	margin: auto;
+ }
+ /*PRODUCTS*/
+ 
+ table, tr, td {
+ 	border: 5px solid black;
+ 	color: white;
+ }
+ #product {
+ 	width: 200px;
+ 	height: 200px;
+ }
+ figcaption {
+ 	text-align: center;
+ }
+ .gameImg {
+ 	width: 150px;
+ 	height: 150px;
+ }
+ .gameDesc {
+ 	vertical-align: text-top;
+ 	font-size: 24px;
+ }
+ .cartAdd {
+ 	font-size: 15px;
+ }
+ .label {
+ 	font-size: 15px;
+ 	background-color: grey;
+ 	height: 50px;
+ 	border-radius: 50px;
+ }
+ .itemInfo {
+ 	text-align: center;
+ 	color: white;
+ }
+ .itemInfo a {
+ 	color: white;
+ }
+ /*PRODUCT DETAil*/
+ 
+ .productName {
+ 	text-align: center;
+ 	font-size: 30px;
+ }
+ .productTable{
+ 	width:100%;
+ }
+ /*DISCLAIMER*/
+ 
+ .disclaimer {
+ 	color: white;
+ 	margin-top: 100px;
+ }
