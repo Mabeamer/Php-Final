@@ -7,7 +7,7 @@
     $id = $_GET['id'];
 
     $sql = "SELECT distinct ProductName, ProductDesc, ProductPrice, ProductImg, ProductId FROM ProductTable WHERE ProductId = $id";
-
+    error_reporting(0);
 ?>
 <!DOCTYPE html>
 <html>

@@ -1,6 +1,6 @@
 <?php
 try{
-    $conn = new mysqli("localhost:8889", "root", "root", "ecommerce_database");
+    $conn = new mysqli("localhost", "r2hstudent", "SbFaGzNgGIE8kfP", "mbeamer");
     if(!empty($_POST)){
         $userInsert = "INSERT INTO `contactTable` ( `fname`, `lname`, `phoneNumber`, `email`, `commentBox`) VALUES (
         ?
@@ -12,23 +12,6 @@ try{
         $stmt = $conn->prepare($userInsert);
         $stmt->bind_param('sssss', $_POST["fname"], $_POST["lname"], $_POST["phone"], $_POST["email"], $_POST["comment"]);
         $stmt->execute();
-        //print "here $userInsert";
-    
-        //print_r($stmt);
-
-
-
-        //? represents a placeholder for where user input could damage database
-        
-        // , lname = ?, phoneNumber = ?, commentBox = ?"
-        //use bind param to fill the placeholder ------ 's' for string 'i' for integer, etc.
-        // $stmt->bind_param('s', $_POST["fname"]);
-        // $_POST["fname"], $_POST["lname"], $_POST["phoneNumber"], $_POST["commentBox"])
-        //call execute function to run the query after placeholders are filled
-        // $stmt->execute();
-
-
-
     }
 }catch(Exception $e){
     // if ($conn->connect_error) {
@@ -38,6 +21,7 @@ try{
     echo $e->getMessage();
 }
     $sql = "SELECT fname, lname, commentBox FROM contactTable";
+    error_reporting(0);
 ?>
 <!DOCTYPE html>
 <html>

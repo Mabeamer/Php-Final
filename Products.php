@@ -1,9 +1,10 @@
 <?php
     try{
-        $conn = new mysqli("localhost:8889", "root", "root", "ecommerce_database");
+        $conn = new mysqli("localhost", "r2hstudent", "SbFaGzNgGIE8kfP", "mbeamer");
     }catch(Exception $e){
         echo $e->getMessage();
     }
+    error_reporting(0);
 ?>
 <!DOCTYPE html>
 <html>
